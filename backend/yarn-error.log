@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/Cellar/node/11.12.0/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  11.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/graphql/-/graphql-14.2.1.tgz: ENOENT: no such file or directory, open '/Users/rosnovsky/Library/Caches/Yarn/v4/npm-graphql-14.2.1-779529bf9a01e7207b977a54c20670b48ca6e95c/node_modules/graphql/.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "name": "sick-fits-backend",
+    "version": "1.0.0",
+    "description": "the backend of sick fits",
+    "scripts": {
+      "start": "nodemon -e js,graphql -x node src/index.js",
+      "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
+      "test": "jest",
+      "deploy": "prisma deploy --env-file variables.env"
+    },
+    "dependencies": {
+      "babel-preset-env": "^1.7.0",
+      "bcryptjs": "2.4.3",
+      "cookie-parser": "^1.4.3",
+      "dotenv": "6.0.0",
+      "graphql": "^0.13.2",
+      "graphql-cli": "^2.16.7",
+      "graphql-yoga": "1.16.2",
+      "jsonwebtoken": "8.3.0",
+      "nodemailer": "^4.6.8",
+      "nodemon": "^1.18.7",
+      "npm-run-all": "^4.1.5",
+      "prisma": "1.17.1",
+      "prisma-binding": "2.1.6",
+      "stripe": "^6.12.1"
+    },
+    "license": "MIT",
+    "repository": {
+      "url": "wesbos.com"
+    },
+    "babel": {
+      "presets": [
+        "env"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
